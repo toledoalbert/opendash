@@ -6,27 +6,62 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My AngularJS App</title>
+  <title>Opendash</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
   <link rel="stylesheet" href="css/app.css"/>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
   <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+  <script src="http://www.parsecdn.com/js/parse-1.2.18.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <body>
-  <ul class="menu">
-    <li><a href="#/view1">view1</a></li>
-    <li><a href="#/view2">view2</a></li>
-  </ul>
 
-  <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
+  <div id="first" class="row">
+      
+        <div id="total" class="col-lg-8"><p ><span class="number">...</span> <span class="name">Users</span></p></div>  
+        <div id="posts" class="col-lg-4 "><p ><span class="number">...</span> <span class="name">Posts</span></p></div> 
+    
+  </div>
 
-  <div ng-view></div>
 
-  <div>Angular seed app: v<span app-version></span></div>
+  <div id="second" class="row">
+
+    <div id="verified" class="col-lg-4"><p ><span class="number">...</span> <span class="name">Verified</span></p></div>
+    <div id="male" class="col-lg-4"><p ><span class="number">...</span> <span class="name">Male</span></p></div>
+    <div id="female" class="col-lg-4"><p ><span class="number">...</span> <span class="name">Female</span></p></div>
+
+  </div>
+
+  <div id="third" class="row">
+      
+        <div id="replies" class="col-lg-6"><p ><span class="number">...</span> <span class="name">Replies</span></p></div>  
+        <div id="likes" class="col-lg-6"><p ><span class="number">...</span> <span class="name">Likes</span></p></div> 
+    
+  </div>
+
+  <div id="fourth" class="row">
+      
+        <div id="messages" class="col-lg-12"><p ><span class="number">...</span> <span class="name">Messages</span></p></div>
+    
+  </div>
+
+  <!--<div id="fourth" class="row">
+      
+        <div id="message" class="col-lg-9"><p class="number">...</p></div>  
+        <div id="email" class="col-lg-3"><p class="name">...</p></div> 
+    
+  </div>
+  -->
 
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
